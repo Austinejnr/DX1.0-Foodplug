@@ -13,6 +13,9 @@ img{
     width: 100%;
     height: 100%;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* major fixes ends here  */
 
 /* re useables start here  */
@@ -76,9 +79,13 @@ header{
     display: flex;
 }
 .desktop-linkcontainer ul li{
-    padding: 15px 20px;
     border: 2px solid transparent;
     color: var(--main-color)
+}
+.desktop-linkcontainer ul a{
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
 }
 .desktop-linkcontainer li:hover{
     border: 2px solid var(--main-color)
@@ -111,6 +118,7 @@ height: 30px;
 width: 30px;
 display: flex;
 align-items: center;
+z-index: 100;
 }
 .mobile-logo{
     border: 2px solid var(--white-color);
@@ -124,7 +132,7 @@ align-items: center;
 }
 .menu::before{
     content: "";
-    background: tomato;
+    background: var(--white-color);
     width: 100%;
     height: 3px;
     position: absolute;
@@ -133,7 +141,7 @@ align-items: center;
 }
 .menu::after{
     content: "";
-    background: black;
+    background: var(--white-color);
     width: 100%;
     height: 3px;
     position: absolute;
@@ -145,12 +153,58 @@ align-items: center;
 }
 .showhamburger .menu::before{
     transform: rotate(45deg);
+    background: var(--main-color);
 }
 .showhamburger .menu::after{
     transform: rotate(-45deg);
+    background: var(--main-color);
 }
 
 /* header section ends here  */
+
+/* hamburger menu edition starts here  */
+.mobile-links-container{
+    /* display: none; */
+    transform: translateX(102%);
+    transition: all 0.4s ease;
+    width: 50%;
+    height: 100%;
+    background: var(--main-color);
+    position: fixed;
+    right: 0;
+    top: 0;    
+    z-index: 3;
+}
+
+.mobile-links-content ul{
+    list-style: none;
+}
+.mobile-links-content a{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 28px 20px;
+}
+.mobile-links-content a:hover{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+.mobile-links-content button{
+    margin: 0 0 0 20px;
+    background: transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+.mobile-links-content .active-link{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+.showmobilelinks{
+    /* display: block; */
+    transform: translateX(0);
+
+}
+/* hamburger menu edition ends here  */
 
 
 
