@@ -503,6 +503,11 @@ footer{
     align-items: center;
     padding: 20px 0;
     color: var(--white-color);
+    flex-wrap: wrap;
+    text-align: center;
+}
+footer p{
+    padding-bottom: 15px;
 }
 .footer-icon-container{
     width: 150px;
