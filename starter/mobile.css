@@ -31,6 +31,10 @@
         margin: 20px 0;
     }
     /* about us section ends here  */
+    .faq-two{
+        display: flex;
+        width: 100%;
+    }
 }
 
 
@@ -47,17 +51,24 @@
     /* explore foods section ends here  */
     
     /* faq section starts here  */
-    .faq-item{
-        min-width: 100%;
-        padding: 0 10px;
+    .faq-container{
+        display: block;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
+    .faq-container .faq-item{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
     /* faq section ends here  */
+
+   
 
     /* parallax section starts here  */
     .parallax{
-        flex-direction: column;
-        padding: 0 25px;
-        text-align: center;
+        font-size: 50px;
     }
     /* parallax section ends here  */
 
