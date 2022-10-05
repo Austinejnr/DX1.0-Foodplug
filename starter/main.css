@@ -266,7 +266,7 @@ z-index: 100;
 
 /* about us section starts here  */
 .about-us{
-/* border: 3px solid tomato; */
+border: 3px solid tomato;
 /* height: 400px; */
 }
 .about-us-container{
@@ -531,5 +531,9 @@ footer button:hover{
 }
 .footer-icons:hover{
     background-color: var(--main-color-dark);
+}
+.footer-icon-container a{
+color: var(--white-color);
+text-decoration: none;
 }
 /* footer section ends here  */
